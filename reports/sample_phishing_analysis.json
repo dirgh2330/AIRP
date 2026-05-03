@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-05-03 18:19:46.761319",
+  "file": "module1_phishing/samples/sample_phishing.eml",
+  "headers": {
+    "From": "security-alert@paypa1-support.com",
+    "Reply-To": "attacker-collect@gmail.com",
+    "Subject": "Urgent: Your account will be suspended in 24 hours"
+  },
+  "urls_found": [
+    "http://paypal-secure-login.suspicious-domain.ru/verify",
+    "http://tinyurl.com/accountverify2026",
+    "http://malicious-payload-download.xyz/update.exe",
+    "http://bit.ly/3xVerifyNow"
+  ],
+  "virustotal_submissions": [
+    {
+      "url": "http://paypal-secure-login.suspicious-domain.ru/verify",
+      "submitted": false,
+      "note": "API key not configured"
+    },
+    {
+      "url": "http://tinyurl.com/accountverify2026",
+      "submitted": false,
+      "note": "API key not configured"
+    },
+    {
+      "url": "http://malicious-payload-download.xyz/update.exe",
+      "submitted": false,
+      "note": "API key not configured"
+    },
+    {
+      "url": "http://bit.ly/3xVerifyNow",
+      "submitted": false,
+      "note": "API key not configured"
+    }
+  ],
+  "indicators": [
+    "Reply-To mismatch with From address",
+    "Shortened URLs detected",
+    "High number of URLs in email body"
+  ],
+  "verdict": "SUSPICIOUS"
+}

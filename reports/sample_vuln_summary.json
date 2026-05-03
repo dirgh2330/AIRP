@@ -1,0 +1,12 @@
+{
+  "scan_processed": "2026-05-03 18:25:56.569162",
+  "source_file": "module4_vuln_dashboard/data/sample_openvas_results.csv",
+  "total_vulnerabilities": 12,
+  "by_severity": {
+    "critical": 3,
+    "high": 3,
+    "medium": 4,
+    "low": 2
+  },
+  "remediation_required": 6
+}

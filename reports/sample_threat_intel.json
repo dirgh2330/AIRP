@@ -1,0 +1,170 @@
+[
+  {
+    "ioc": "185.220.101.47",
+    "type": "IPv4",
+    "severity": "CRITICAL",
+    "timestamp": "2026-05-03 18:22:43.952266",
+    "abuseipdb": {
+      "source": "AbuseIPDB",
+      "abuse_score": 85,
+      "country": "RU",
+      "isp": "Mock ISP",
+      "total_reports": 42,
+      "note": "Mock data - API key not configured"
+    },
+    "alienvault_otx": {
+      "source": "AlienVault OTX",
+      "pulse_count": 12,
+      "reputation": 2,
+      "note": "Mock data - API key not configured"
+    },
+    "recommended_action": "BLOCK"
+  },
+  {
+    "ioc": "91.108.4.177",
+    "type": "IPv4",
+    "severity": "CRITICAL",
+    "timestamp": "2026-05-03 18:22:43.952638",
+    "abuseipdb": {
+      "source": "AbuseIPDB",
+      "abuse_score": 85,
+      "country": "RU",
+      "isp": "Mock ISP",
+      "total_reports": 42,
+      "note": "Mock data - API key not configured"
+    },
+    "alienvault_otx": {
+      "source": "AlienVault OTX",
+      "pulse_count": 12,
+      "reputation": 2,
+      "note": "Mock data - API key not configured"
+    },
+    "recommended_action": "BLOCK"
+  },
+  {
+    "ioc": "194.165.16.11",
+    "type": "IPv4",
+    "severity": "CRITICAL",
+    "timestamp": "2026-05-03 18:22:43.952824",
+    "abuseipdb": {
+      "source": "AbuseIPDB",
+      "abuse_score": 85,
+      "country": "RU",
+      "isp": "Mock ISP",
+      "total_reports": 42,
+      "note": "Mock data - API key not configured"
+    },
+    "alienvault_otx": {
+      "source": "AlienVault OTX",
+      "pulse_count": 12,
+      "reputation": 2,
+      "note": "Mock data - API key not configured"
+    },
+    "recommended_action": "BLOCK"
+  },
+  {
+    "ioc": "45.142.212.100",
+    "type": "IPv4",
+    "severity": "CRITICAL",
+    "timestamp": "2026-05-03 18:22:43.952922",
+    "abuseipdb": {
+      "source": "AbuseIPDB",
+      "abuse_score": 85,
+      "country": "RU",
+      "isp": "Mock ISP",
+      "total_reports": 42,
+      "note": "Mock data - API key not configured"
+    },
+    "alienvault_otx": {
+      "source": "AlienVault OTX",
+      "pulse_count": 12,
+      "reputation": 2,
+      "note": "Mock data - API key not configured"
+    },
+    "recommended_action": "BLOCK"
+  },
+  {
+    "ioc": "198.199.103.90",
+    "type": "IPv4",
+    "severity": "CRITICAL",
+    "timestamp": "2026-05-03 18:22:43.953020",
+    "abuseipdb": {
+      "source": "AbuseIPDB",
+      "abuse_score": 85,
+      "country": "RU",
+      "isp": "Mock ISP",
+      "total_reports": 42,
+      "note": "Mock data - API key not configured"
+    },
+    "alienvault_otx": {
+      "source": "AlienVault OTX",
+      "pulse_count": 12,
+      "reputation": 2,
+      "note": "Mock data - API key not configured"
+    },
+    "recommended_action": "BLOCK"
+  },
+  {
+    "ioc": "5.188.206.14",
+    "type": "IPv4",
+    "severity": "CRITICAL",
+    "timestamp": "2026-05-03 18:22:43.953114",
+    "abuseipdb": {
+      "source": "AbuseIPDB",
+      "abuse_score": 85,
+      "country": "RU",
+      "isp": "Mock ISP",
+      "total_reports": 42,
+      "note": "Mock data - API key not configured"
+    },
+    "alienvault_otx": {
+      "source": "AlienVault OTX",
+      "pulse_count": 12,
+      "reputation": 2,
+      "note": "Mock data - API key not configured"
+    },
+    "recommended_action": "BLOCK"
+  },
+  {
+    "ioc": "185.234.218.21",
+    "type": "IPv4",
+    "severity": "CRITICAL",
+    "timestamp": "2026-05-03 18:22:43.953234",
+    "abuseipdb": {
+      "source": "AbuseIPDB",
+      "abuse_score": 85,
+      "country": "RU",
+      "isp": "Mock ISP",
+      "total_reports": 42,
+      "note": "Mock data - API key not configured"
+    },
+    "alienvault_otx": {
+      "source": "AlienVault OTX",
+      "pulse_count": 12,
+      "reputation": 2,
+      "note": "Mock data - API key not configured"
+    },
+    "recommended_action": "BLOCK"
+  },
+  {
+    "ioc": "79.137.194.87",
+    "type": "IPv4",
+    "severity": "CRITICAL",
+    "timestamp": "2026-05-03 18:22:43.953405",
+    "abuseipdb": {
+      "source": "AbuseIPDB",
+      "abuse_score": 85,
+      "country": "RU",
+      "isp": "Mock ISP",
+      "total_reports": 42,
+      "note": "Mock data - API key not configured"
+    },
+    "alienvault_otx": {
+      "source": "AlienVault OTX",
+      "pulse_count": 12,
+      "reputation": 2,
+      "note": "Mock data - API key not configured"
+    },
+    "recommended_action": "BLOCK"
+  }
+]

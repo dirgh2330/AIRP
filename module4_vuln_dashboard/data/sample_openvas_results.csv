@@ -1,0 +1,13 @@
+host,port,severity,cvss,cve,description,solution
+192.168.1.10,445,Critical,9.8,CVE-2017-0144,EternalBlue SMB Remote Code Execution,Apply MS17-010 patch immediately
+192.168.1.10,3389,Critical,9.8,CVE-2019-0708,BlueKeep RDP Remote Code Execution,Disable RDP or apply KB4499175 patch
+192.168.1.11,80,High,7.5,CVE-2021-44228,Log4Shell Remote Code Execution,Upgrade Log4j to 2.17.1 or later
+192.168.1.11,443,High,7.2,CVE-2022-22965,Spring4Shell RCE Vulnerability,Upgrade Spring Framework to 5.3.18
+192.168.1.12,22,High,7.8,CVE-2023-38408,OpenSSH Remote Code Execution,Upgrade OpenSSH to version 9.3p2
+192.168.1.12,8080,Medium,6.1,CVE-2022-42889,Apache Commons Text RCE,Upgrade to Commons Text 1.10.0
+192.168.1.13,21,Medium,5.9,CVE-2021-3449,OpenSSL NULL Pointer Dereference,Upgrade OpenSSL to 1.1.1k or later
+192.168.1.13,25,Medium,5.3,CVE-2020-7247,OpenSMTPD Remote Code Execution,Upgrade OpenSMTPD to 6.6.4p1
+192.168.1.14,3306,Medium,4.9,CVE-2021-2307,MySQL Information Disclosure,Apply MySQL 8.0.24 patch
+192.168.1.14,5432,Low,3.7,CVE-2021-3393,PostgreSQL Information Leakage,Upgrade PostgreSQL to 13.2
+192.168.1.15,110,Low,3.1,CVE-2020-8277,Node.js DNS Rebinding,Upgrade Node.js to 15.2.1 or later
+192.168.1.15,6379,Critical,9.8,CVE-2022-0543,Redis Remote Code Execution,Update Redis and restrict network access

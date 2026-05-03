@@ -1,0 +1,12 @@
+config.py
+venv/
+__pycache__/
+*.pyc
+.env
+reports/phishing_ir_report_*.pdf
+reports/malware_ir_report_*.pdf
+reports/unauthorized_access_ir_report_*.pdf
+reports/phishing_analysis_*.json
+reports/threat_intel_*.json
+reports/cleaned_vulnerabilities.csv
+reports/compliance_summary.json
