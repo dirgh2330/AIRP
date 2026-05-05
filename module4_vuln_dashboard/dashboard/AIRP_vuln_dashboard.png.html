@@ -1,0 +1,102 @@
+<style>
+.db{font-family:var(--font-sans);padding:16px 0;}
+.db-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+.db-title{font-size:16px;font-weight:500;color:var(--color-text-primary);}
+.db-sub{font-size:12px;color:var(--color-text-secondary);}
+.badge{font-size:11px;font-weight:500;padding:3px 10px;border-radius:20px;background:#FCEBEB;color:#A32D2D;}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px;}
+.card{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px 14px;}
+.card-label{font-size:11px;color:var(--color-text-secondary);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em;}
+.card-val{font-size:26px;font-weight:500;}
+.card-val.red{color:#A32D2D;}
+.card-val.amber{color:#633806;}
+.card-val.blue{color:#0C447C;}
+.card-val.teal{color:#085041;}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:10px;margin-bottom:16px;}
+.panel{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:14px;}
+.panel-title{font-size:12px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px;}
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.bar-label{font-size:12px;color:var(--color-text-primary);width:56px;flex-shrink:0;}
+.bar-track{flex:1;height:8px;background:var(--color-border-tertiary);border-radius:4px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:4px;}
+.bar-count{font-size:12px;font-weight:500;width:20px;text-align:right;flex-shrink:0;}
+.donut-wrap{display:flex;align-items:center;gap:16px;}
+.legend{display:flex;flex-direction:column;gap:6px;}
+.leg-row{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--color-text-primary);}
+.leg-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.table-wrap{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:14px;}
+.tbl{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed;}
+.tbl th{text-align:left;font-size:11px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:.05em;padding:0 8px 8px 0;border-bottom:0.5px solid var(--color-border-tertiary);}
+.tbl td{padding:7px 8px 7px 0;border-bottom:0.5px solid var(--color-border-tertiary);color:var(--color-text-primary);vertical-align:middle;}
+.tbl tr:last-child td{border-bottom:none;}
+.sev{font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;}
+.sev-c{background:#FCEBEB;color:#A32D2D;}
+.sev-h{background:#FAEEDA;color:#633806;}
+.sev-m{background:#E6F1FB;color:#0C447C;}
+.sev-l{background:#E1F5EE;color:#085041;}
+.host-row{display:flex;align-items:center;gap:6px;margin-bottom:6px;}
+.host-label{font-size:11px;color:var(--color-text-secondary);width:90px;flex-shrink:0;}
+.host-track{flex:1;height:6px;background:var(--color-border-tertiary);border-radius:3px;overflow:hidden;}
+.host-fill{height:100%;border-radius:3px;background:#378ADD;}
+</style>
+<div class="db">
+<div class="db-header">
+<div><div class="db-title">Vulnerability reporting dashboard</div><div class="db-sub">AIRP Module 4 · Source: OpenVAS scan · 5 hosts · 12 CVEs</div></div>
+<span class="badge">6 require remediation</span>
+</div>
+<div class="cards">
+<div class="card"><div class="card-label">Total CVEs</div><div class="card-val blue">12</div></div>
+<div class="card"><div class="card-label">Critical</div><div class="card-val red">3</div></div>
+<div class="card"><div class="card-label">High</div><div class="card-val amber">3</div></div>
+<div class="card"><div class="card-label">Avg CVSS</div><div class="card-val teal">6.8</div></div>
+</div>
+<div class="row">
+<div class="panel">
+<div class="panel-title">Severity breakdown</div>
+<div class="donut-wrap">
+<svg width="90" height="90" viewBox="0 0 90 90">
+<circle cx="45" cy="45" r="32" fill="none" stroke="#F09595" stroke-width="18" stroke-dasharray="60 141" stroke-dashoffset="0"/>
+<circle cx="45" cy="45" r="32" fill="none" stroke="#EF9F27" stroke-width="18" stroke-dasharray="60 141" stroke-dashoffset="-60"/>
+<circle cx="45" cy="45" r="32" fill="none" stroke="#85B7EB" stroke-width="18" stroke-dasharray="80 121" stroke-dashoffset="-120"/>
+<circle cx="45" cy="45" r="32" fill="none" stroke="#9FE1CB" stroke-width="18" stroke-dasharray="41 160" stroke-dashoffset="-200"/>
+<text x="45" y="49" text-anchor="middle" font-size="13" font-weight="500" fill="var(--color-text-primary)">12</text>
+</svg>
+<div class="legend">
+<div class="leg-row"><div class="leg-dot" style="background:#F09595"></div>Critical — 3</div>
+<div class="leg-row"><div class="leg-dot" style="background:#EF9F27"></div>High — 3</div>
+<div class="leg-row"><div class="leg-dot" style="background:#85B7EB"></div>Medium — 4</div>
+<div class="leg-row"><div class="leg-dot" style="background:#9FE1CB"></div>Low — 2</div>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-title">CVEs per host</div>
+<div class="host-row"><span class="host-label">192.168.1.10</span><div class="host-track"><div class="host-fill" style="width:100%"></div></div><span style="font-size:12px;font-weight:500;color:var(--color-text-primary)">3</span></div>
+<div class="host-row"><span class="host-label">192.168.1.11</span><div class="host-track"><div class="host-fill" style="width:66%"></div></div><span style="font-size:12px;font-weight:500;color:var(--color-text-primary)">2</span></div>
+<div class="host-row"><span class="host-label">192.168.1.12</span><div class="host-track"><div class="host-fill" style="width:66%"></div></div><span style="font-size:12px;font-weight:500;color:var(--color-text-primary)">2</span></div>
+<div class="host-row"><span class="host-label">192.168.1.13</span><div class="host-track"><div class="host-fill" style="width:66%"></div></div><span style="font-size:12px;font-weight:500;color:var(--color-text-primary)">2</span></div>
+<div class="host-row"><span class="host-label">192.168.1.14</span><div class="host-track"><div class="host-fill" style="width:66%"></div></div><span style="font-size:12px;font-weight:500;color:var(--color-text-primary)">2</span></div>
+<div class="host-row"><span class="host-label">192.168.1.15</span><div class="host-track"><div class="host-fill" style="width:33%"></div></div><span style="font-size:12px;font-weight:500;color:var(--color-text-primary)">1</span></div>
+</div>
+</div>
+<div class="table-wrap">
+<div class="panel-title">CVE priority table</div>
+<table class="tbl">
+<thead><tr><th style="width:140px">CVE</th><th style="width:110px">Host</th><th style="width:70px">Severity</th><th style="width:50px">CVSS</th><th>Remediation</th></tr></thead>
+<tbody>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2017-0144</td><td style="font-size:11px">192.168.1.10</td><td><span class="sev sev-c">Critical</span></td><td style="font-weight:500;color:#A32D2D">9.8</td><td style="font-size:11px;color:var(--color-text-secondary)">Apply MS17-010 patch</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2019-0708</td><td style="font-size:11px">192.168.1.10</td><td><span class="sev sev-c">Critical</span></td><td style="font-weight:500;color:#A32D2D">9.8</td><td style="font-size:11px;color:var(--color-text-secondary)">Disable RDP or patch</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2022-0543</td><td style="font-size:11px">192.168.1.15</td><td><span class="sev sev-c">Critical</span></td><td style="font-weight:500;color:#A32D2D">9.8</td><td style="font-size:11px;color:var(--color-text-secondary)">Update Redis</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2021-44228</td><td style="font-size:11px">192.168.1.11</td><td><span class="sev sev-h">High</span></td><td style="font-weight:500;color:#633806">7.5</td><td style="font-size:11px;color:var(--color-text-secondary)">Upgrade Log4j 2.17.1</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2022-22965</td><td style="font-size:11px">192.168.1.11</td><td><span class="sev sev-h">High</span></td><td style="font-weight:500;color:#633806">7.2</td><td style="font-size:11px;color:var(--color-text-secondary)">Upgrade Spring 5.3.18</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2023-38408</td><td style="font-size:11px">192.168.1.12</td><td><span class="sev sev-h">High</span></td><td style="font-weight:500;color:#633806">7.8</td><td style="font-size:11px;color:var(--color-text-secondary)">Upgrade OpenSSH 9.3p2</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2022-42889</td><td style="font-size:11px">192.168.1.12</td><td><span class="sev sev-m">Medium</span></td><td style="font-weight:500;color:#0C447C">6.1</td><td style="font-size:11px;color:var(--color-text-secondary)">Upgrade Commons Text</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2021-3449</td><td style="font-size:11px">192.168.1.13</td><td><span class="sev sev-m">Medium</span></td><td style="font-weight:500;color:#0C447C">5.9</td><td style="font-size:11px;color:var(--color-text-secondary)">Upgrade OpenSSL 1.1.1k</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2020-7247</td><td style="font-size:11px">192.168.1.13</td><td><span class="sev sev-m">Medium</span></td><td style="font-weight:500;color:#0C447C">5.3</td><td style="font-size:11px;color:var(--color-text-secondary)">Upgrade OpenSMTPD</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2021-2307</td><td style="font-size:11px">192.168.1.14</td><td><span class="sev sev-m">Medium</span></td><td style="font-weight:500;color:#0C447C">4.9</td><td style="font-size:11px;color:var(--color-text-secondary)">Apply MySQL 8.0.24 patch</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2021-3393</td><td style="font-size:11px">192.168.1.14</td><td><span class="sev sev-l">Low</span></td><td style="font-weight:500;color:#085041">3.7</td><td style="font-size:11px;color:var(--color-text-secondary)">Upgrade PostgreSQL 13.2</td></tr>
+<tr><td style="font-family:var(--font-mono);font-size:11px">CVE-2020-8277</td><td style="font-size:11px">192.168.1.15</td><td><span class="sev sev-l">Low</span></td><td style="font-weight:500;color:#085041">3.1</td><td style="font-size:11px;color:var(--color-text-secondary)">Upgrade Node.js 15.2.1</td></tr>
+</tbody>
+</table>
+</div>
+</div>
