@@ -18,7 +18,7 @@ environments. The goal was to show that I can build tools, not just use them.
 
 ## Architecture
 
-![AIRP Architecture](architecture/AIRP_architecture.png)
+![AIRP Architecture](architecture/AIRP_clean_architecture.svg)
 
 ## Modules
 
